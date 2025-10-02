@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manok Ni Botoy</title>   
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🍗 Manok Ni Botoy</h1>
+    <p>Fresh • Crispy • Juicy</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../index.html">
+                <img src="images/home.jpg" width="80" alt="home">
+            </a>
+            <a href="../ade-codes/adepage.html">BURGER</a>
+            <a href="../peter/Index.html">JOLLOF RICE</a>
+            <a href="../egg-sauce/index.html">YAM AND EGG SAUCE</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <h2>Taste the Best Fried Chicken in Town!</h2>
+    <a href="#menu" class="btn">See Our Menu</a>
+  </div>
+
+  <!-- Menu Section -->
+  <div class="content" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images/image.png" alt="Fried Chicken">
+        <h3>Fried Chicken</h3>
+        <p>Original, juicy, and packed with flavor.</p>
+        <p class="price">$4.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/Sweet-Spicy-Chicken.jpg" alt="Sweet Spicy Chicken">
+        <h3>Sweet Spicy Chicken</h3>
+        <p>Crispy with a fiery kick of Sweet spices.</p>
+        <p class="price">$5.49</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/chiken wings.jpg" alt="Chicken Wings">
+        <h3>Chicken Wings</h3>
+        <p>Tender wings glazed with your choice of sauce.</p>
+        <p class="price">$6.99</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Form Section -->
+  <div class="content" id="order">
+    <h2>Place Your Order</h2>
+    <form action="mailto:info@manoknibotoy.com" method="post" enctype="text/plain">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
+
+      <label for="item">Select Item</label>
+      <select id="item" name="item" required>
+        <option value="">-- Choose an item --</option>
+        <option value="Fried Chicken">Fried Chicken - $4.99</option>
+        <option value="Spicy Chicken">Spicy Chicken - $5.49</option>
+        <option value="Chicken Wings">Chicken Wings - $6.99</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <label for="message">Special Instructions</label>
+      <textarea id="message" name="message" rows="3" placeholder="Extra spicy, no sauce, etc."></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="content" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>📍 Location:</strong> 123 Maawa ka Chicken Street, Singkaw Food City</p>
+    <p><strong>📞 Phone:</strong> (123) 456-7890</p>
+    <p><strong>📧 Email:</strong> info@manoknibotoy.com</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Manok Ni Botoy | Made with ❤️ for Chicken Lovers</p>
+  </footer>
+
+</body>
+</html>
