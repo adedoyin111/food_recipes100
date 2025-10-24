@@ -1,0 +1,89 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation using Grid */
+header {
+  background-color: #343a40;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  background-color: #495057;
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #6c757d;
+}
+
+nav img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #f8f9fa;
+}
+
+/* Headings and content */
+h1 {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+  color: #212529;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+section h2 {
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
