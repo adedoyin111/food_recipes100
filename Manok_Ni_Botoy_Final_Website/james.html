@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manok Ni Botoy - Best Fried Chicken in Town</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+        <nav class="navbar">
+            <!-- CLICK HOME IMAGE TO GO TO THE HOME PAGE -->
+            <a href="../index.html">
+                <img src="images/home.jpg" width="80" alt="home">
+            </a>
+
+            <a href="../peter/Index.html">JOLLOF RICE</a>
+            <a href="../egg-sauce/index.html">YAM AND EGG SAUCE</a>
+             <a href="../ade-codes/adepage.html">BURGER</a>
+        </nav>
+    </header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <div class="hero-text">
+      <h2>Taste the Best Fried Chicken in Town!</h2>
+      <p>Homestyle marinated chicken, double-fried to golden perfection. Crispy outside, juicy inside — every bite is pure love. ❤️</p>
+      <a href="#menu" class="btn">See Our Menu</a>
+    </div>
+    <img src="images/logo.png" alt="Crispy fried chicken" class="hero-image">
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu fade-in" id="menu">
+    <h2>Our Best Sellers</h2>
+    <div class="menu-grid">
+      <article class="menu-item">
+        <img src="images/fried chicken.png" alt="Fried Chicken">
+        <h3>Fried Chicken</h3>
+        <p>Original, juicy, and full of classic flavor.</p>
+        <p class="price">$4.99</p>
+      </article>
+
+      <article class="menu-item">
+        <img src="images/Sweet-Spicy-Chicken.jpg" alt="Sweet Spicy Chicken">
+        <h3>Sweet & Spicy Chicken</h3>
+        <p>Crispy with a bold, fiery kick of sweet spices.</p>
+        <p class="price">$5.49</p>
+      </article>
+
+      <article class="menu-item">
+        <img src="images/chiken wings.jpg" alt="Chicken Wings">
+        <h3>Chicken Wings</h3>
+        <p>Glazed with your favorite signature sauce.</p>
+        <p class="price">$6.99</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order fade-in" id="order">
+    <h2>Place Your Order</h2>
+    <form action="mailto:info@manoknibotoy.com" method="post" enctype="text/plain" class="order-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
+
+      <label for="item">Select Item</label>
+      <select id="item" name="item" required>
+        <option value="">-- Choose an item --</option>
+        <option value="Fried Chicken">Fried Chicken - $4.99</option>
+        <option value="Spicy Chicken">Spicy Chicken - $5.49</option>
+        <option value="Chicken Wings">Chicken Wings - $6.99</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <label for="message">Special Instructions</label>
+      <textarea id="message" name="message" rows="3" placeholder="Extra spicy, no sauce, etc."></textarea>
+
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact fade-in" id="contact">
+    <h2>Contact Us</h2>
+    <address>
+      <p><strong>📍 Location:</strong> 123 Maawa ka Chicken Street, Singkaw Food City</p>
+      <p><strong>📞 Phone:</strong> (123) 456-7890</p>
+      <p><strong>📧 Email:</strong> info@manoknibotoy.com</p>
+    </address>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Manok Ni Botoy | Made with James ❤️ for Chicken Lovers</p>
+</footer>
+
+<script>
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+</body>
+</html>

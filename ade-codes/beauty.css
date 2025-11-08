@@ -1,0 +1,221 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/*  FLEXBOX: NAVBAR  */
+header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #b71c1c, #c62828);
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 10px 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #ffe0b2;
+  transform: scale(1.1);
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar img {
+  border-radius: 8px;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+}
+
+.link a{
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  margin: 5px;
+  background-color: #ddd2c3;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;}
+
+@media (max-width: 768px) {
+  .navbar {
+    gap: 25px;
+  }
+  .navbar a {
+    font-size: 1.1em;
+  }
+}
+/* Main Image Float (FLOAT LAYOUT) */
+main img {
+  float: center;
+  width: 500px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/*  GRID LAYOUT for .cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: red;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect  */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  background-color: #94848a;
+}
+
+/* Card Images */
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Image Zoom Effect  */
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/*  Step Buttons */
+.round-btn {
+  margin-top: 10px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #181717;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/*  Hover Effect for Buttons  */
+.round-btn:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+
+/*  FLEXBOX: Steps Section  */
+.step div {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: #fff3e0;
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.step img {
+  width: 180px;
+  margin-right: 20px;
+}
+
+/*  MULTICOLUMN: Story Section  */
+.story {
+  background-color: #f1f8e9;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.story h1 {
+  color: #970606;
+}
+
+.story h2 {
+  font-weight: normal;
+  color: #333;
+}
+
+/*  TABLE Styling  */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+th {
+  background-color: #ef9a9a;
+}
+
+tr:nth-child(even) {
+  background-color: #fff3e0;
+}
+
+/* Footer */
+footer {
+  background-color: #c62828;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
