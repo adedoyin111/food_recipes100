@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, minmax(100px, auto));
+  gap: 10px;
+  margin: 10px 10px;
+  border: 1px solid #ddd;
+}
+
+.box {
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.food-gallery {
+  grid-column: 1;
+  grid-row: 1/6;
+}
+
+.intro {
+  grid-row: 1;
+  grid-column: 2/4;
+}
+
+.ingredients {
+  grid-row: 2;
+  grid-column: 2/4;
+}
+
+.directions {
+  grid-row: 3;
+  grid-column: 2/4;
+}
+
+.green {
+  border-color: rgb(60, 181, 70);
+}
+
+.yellow {
+  border-color: gold;
+}
+
+.orange {
+  border-color: orange;
+}
